@@ -8,7 +8,7 @@ ENV container docker
 # Enable EPEL repository and install packages
 RUN yum install epel-release -y && \
     yum update -y && \
-    yum install install mc nc vim-common wget sysstat htop figlet initscripts -y && \
+    yum install install mc nc vim-common wget sysstat htop figlet initscripts ruby -y && \
     yum clean all
 
 # Copy SELinux configuration
